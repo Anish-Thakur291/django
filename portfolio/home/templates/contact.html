@@ -1,0 +1,44 @@
+{%extends "base.html"%}
+{%block body%}
+      <div class="container">
+      <h2 class="text-center">contact me </h2>
+      <form action="/contact/" method="post">
+        {% csrf_token %}
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label"> your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+  
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+  
+        <!-- Phone -->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number </label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+  
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label"> Message</label>
+
+          <!-- name="name" this attribute is important send request data to sever -->
+           
+          <textarea class="form-control" id="mesg" name="mesg" rows="5" placeholder="Type your message here" required></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <footer class="py-3 bg-dark text-light position-fixed bottom-0 w-100">
+      <p class="text-center" style="color: bisque;">Copyright &copy;2024 |All Right Reserved</p>
+      </footer>
+  {% endblock body%}
+ 

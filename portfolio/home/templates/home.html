@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{%block body %}
+      
+                      
+
+      <div class="container-fluid mt-0 px-0">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://imgs.search.brave.com/JzFOE7LdJ7bMWDcJGCR8-izNreEbWRkO3J0Ua3FdcNA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4Lzc2LzAyLzQy/LzM2MF9GXzg3NjAy/NDIwNV9ZODJoQlBu/OHo2aTNsQVFIWEtj/OTRhbEdYaWNVNW81/SS5qcGc" class="img-fluid" alt="..."style="width: 100%; height: 450px;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imgs.search.brave.com/vEFqjlfA4vjYizcfCUgr812h4UVGqFt93HUc_eyoRaI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvaW5mb3JtYXRp/b24tdGVjaG5vbG9n/eS1iYWNrZ3JvdW5k/LXlqNWxudHg5bHpp/bzN5aXouanBn" class="img-fluid" alt="..."style="width: 100%; height: 450px;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imgs.search.brave.com/yQf4xLSzmwFGxHGTqJtbGWPnJmMyGtX0ujMjYZZ6sEA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29kaW5nLWJh/Y2tncm91bmQtOWl6/bHltcG5kMG92bXBs/aS5qcGc" class="img-fluid" alt="..."style="width: 100%; height: 450px;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="container mt-3">
+        <h2 class = text-center>Me At Glance</h2>
+        <div class="row">
+          <!-- card 1 -->
+          <div class="col mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/side1.jpg" class="card-img-top" alt="..."  style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">APP Developer</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/silde2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Game Developer</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/static/silde3.jpg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Markiting</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <footer class="py-3 bg-dark text-light">
+        <p class="text-center" style="color: bisque;">Copyright &copy;2024 |All Right Reserved</p>
+        </footer>
+
+      {% endblock body %}
+      
+     

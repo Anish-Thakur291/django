@@ -1,5 +1,5 @@
 """
-URL configuration for mysite project.
+URL configuration for portfolio project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,7 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from home.views import *
+
+# make some changes to admin pannel
+
+admin.site.site_header="developer Thakur"
+admin.site.site_title="welcome to dashord"
+admin.site.index_title="welcome to my database"
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #  path('', include('home.urls'))
+    path('',home,name='home'),
+    path('about/',about,name='about'),
+    path('projects/',projects,name='projects'),
+    path('contact/',contact,name='contact'),
 ]
